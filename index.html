@@ -3,13 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crud Operations</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <input type="text" placeholder="New Country" />
-      <button>Add</button>
-      <h3>Name</h3>
+    <div class="container">
+      <div class="form-container">
+        <form class="add-a-country">
+          <input type="text" placeholder="New Country" />
+          <button>Add</button>
+        </form>
+        <form class="update-country">
+          <input type="text" placeholder="Edit Country" />
+          <button>Update</button>
+        </form>
+        <p id="counter"></p>
+        <table>
+          <tr>
+            <th>Name</th>
+          </tr>
+          <tbody id="countries"></tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
