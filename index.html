@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="form-container">
-        <form class="add-a-country">
-          <input type="text" placeholder="New Country" />
-          <button>Add</button>
-        </form>
-        <form class="update-country">
-          <input type="text" placeholder="Edit Country" />
-          <button>Update</button>
-        </form>
-        <p id="counter"></p>
-        <table>
-          <tr>
-            <th>Name</th>
-          </tr>
-          <tbody id="countries"></tbody>
-        </table>
-      </div>
+    <form>
+      <input type="text" id="add-name" placeholder="New Country" />
+      <input type="submit" value="Add" />
+    </form>
+    <div>
+      <form>
+        <input type="text" id="edit-name" />
+        <input type="submit" value="Edit" />
+      </form>
     </div>
+    <p id="counter"></p>
+    <table>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tbody id="countries"></tbody>
+    </table>
+    <script src="./script.js"></script>
   </body>
 </html>
